@@ -73,7 +73,7 @@ ZSH_THEME="spaceship"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=()
-plugins=(git zsh-syntax-highlighting vscode zsh-interactive-cd ssh-agent magic-enter docker vi-mode spaceship-vi-mode)
+plugins=(git zsh-syntax-highlighting vscode zsh-interactive-cd ssh-agent magic-enter docker spaceship-vi-mode) #vi-mode
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 
@@ -157,6 +157,12 @@ _pyenv() {
 }
 
 export SPACESHIP_VENV_SYMBOL="🐍 "
+
+eval spaceship_vi_mode_enable
+export SPACESHIP_VI_MODE_SHOW=true
+export SPACESHIP_VI_MODE_NORMAL="[N]"
+export SPACESHIP_VI_MODE_COLOR="green"
+
 
 # for use with chezmoi
 DISABLE_AUTO_UPDATE="true"
