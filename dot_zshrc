@@ -73,7 +73,7 @@ ZSH_THEME="spaceship"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=()
-plugins=(git zsh-syntax-highlighting vscode zsh-interactive-cd ssh-agent magic-enter docker vi-mode)
+plugins=(git zsh-syntax-highlighting vscode zsh-interactive-cd ssh-agent magic-enter docker vi-mode spaceship-vi-mode)
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 
