@@ -156,6 +156,8 @@ _pyenv() {
   reply=(${(ps:\n:)completions})
 }
 
+export SPACESHIP_VENV_SYMBOL="🐍 "
+
 # for use with chezmoi
 DISABLE_AUTO_UPDATE="true"
 
