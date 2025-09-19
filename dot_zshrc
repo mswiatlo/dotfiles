@@ -133,8 +133,8 @@ bindkey -v
 bindkey "^?" backward-delete-char
 
 # setup fuzzy history, etc.
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 ## pyenv autocompletion
 if [[ ! -o interactive ]]; then
